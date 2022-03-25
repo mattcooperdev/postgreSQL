@@ -1,4 +1,17 @@
 
+/*******************************************************************************
+   Chinook Database - Version 1.4
+   Script: Chinook_PostgreSql.sql
+   Description: Creates and populates the Chinook database.
+   DB Server: PostgreSql
+   Author: Luis Rocha
+   License: http://www.codeplex.com/ChinookDatabase/license
+********************************************************************************/
+
+
+/*******************************************************************************
+   Create Tables
+********************************************************************************/
 CREATE TABLE "Album"
 (
     "AlbumId" INT NOT NULL,
@@ -1567,7 +1580,7 @@ INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Mi
 INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (725, N'Vida Bandida (Ao Vivo)', 56, 1, 7, 192626, 6360785, 0.99);
 INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (726, N'Palavras Ao Vento', 56, 1, 7, 212453, 7048676, 0.99);
 INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (727, N'N�o Sei O Que Eu Quero Da Vida', 56, 1, 7, 151849, 5024963, 0.99);
-INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (728, N'Woman Of The World (Ao Vivo)', 56, 1, 7, 298919, 9724145, 0.99);
+INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (728, N'Woman Is The Nigger Of The World (Ao Vivo)', 56, 1, 7, 298919, 9724145, 0.99);
 INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (729, N'Juventude Transviada (Ao Vivo)', 56, 1, 7, 278622, 9183808, 0.99);
 INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (730, N'Malandragem', 57, 1, 7, 247588, 8165048, 0.99);
 INSERT INTO "Track" ("TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Milliseconds", "Bytes", "UnitPrice") VALUES (731, N'O Segundo Sol', 57, 1, 7, 252133, 8335629, 0.99);
@@ -15801,5 +15814,4 @@ INSERT INTO "PlaylistTrack" ("PlaylistId", "TrackId") VALUES (17, 2095);
 INSERT INTO "PlaylistTrack" ("PlaylistId", "TrackId") VALUES (17, 2096);
 INSERT INTO "PlaylistTrack" ("PlaylistId", "TrackId") VALUES (17, 3290);
 INSERT INTO "PlaylistTrack" ("PlaylistId", "TrackId") VALUES (18, 597);
-
 
