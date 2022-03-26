@@ -8,7 +8,7 @@ connection = psycopg2.connect(database="chinook")
 cursor = connection.cursor()
 
 # Query 1 - select all records from the "Artist" table
-# cursor.execute('SELECT * FROM "Artist"')
+cursor.execute('SELECT * FROM "Artist"')
 
 # Query 2 - select only the "Name" column from the "Artist" table
 # cursor.execute('SELECT "Name" FROM "Artist"')
@@ -23,7 +23,7 @@ cursor = connection.cursor()
 # cursor.execute('SELECT * FROM "Album" WHERE "ArtistId" = %s', [51])
 
 # Query 6 - select all tracks where the composer is "Queen" from the "Track" table
-cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"])
+cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["U2"])
 
 # fetch the results (multiple)
 results = cursor.fetchall()
